@@ -16,4 +16,4 @@ VOLUME /etc/elasticsearch
 EXPOSE 9200
 EXPOSE 9300
 
-CMD ["/usr/share/elasticsearch/bin/elasticsearch", "-Des.http.cors.enabled=true"]
+CMD ["/usr/share/elasticsearch/bin/elasticsearch", "-Des.http.cors.enabled=true", "--default.path.conf=/etc/elasticsearch"]
